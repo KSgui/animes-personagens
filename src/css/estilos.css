@@ -1,0 +1,162 @@
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-233deg, #000 30%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+
+.personagem {
+    display: none;
+    height: 100vh;
+}
+
+.personagem.selecionado {
+    display: block;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.nome-personagem {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.logo1 {
+    background-image: url("https://logodownload.org/wp-content/uploads/2017/12/dragon-ball-super-logo-1.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+}
+.logo2 {
+    background-image: url("https://seeklogo.com/images/C/cavaleiros-do-zodiaco-logo-7BEBD54081-seeklogo.com.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+}
+.logo3 {
+    background-image: url("../imagens/fullmetal-removebg-preview.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+}
+.logo4 {
+    background-image: url("https://logodownload.org/wp-content/uploads/2014/10/naruto-logo-shippuuden.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+}
+.logo5 {
+    background-image: url("http://logos-download.com/wp-content/uploads/2016/07/Pok%C3%A9mon_logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 270px;
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botao {
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.cor1{
+    background-color: orange;
+}
+.cor2{
+    background-color: blue;
+}
+.cor3{
+    background-color: #000;
+}
+.cor4{
+    background-color: #be1111a3;
+    width: 90px;
+    height: 90px;
+}
+.cor5{
+    background-color: white;
+    width: 90px;
+    height: 90px;
+}
+
+.img1 {
+    width: 100px;
+    height: 100px;
+}
+.img2 {
+    width: 100px;
+    height: 100px;
+}
+.img3 {
+    width: 100px;
+    height: 100px;
+    margin-top: -10px;
+    margin-left:2px;
+}
+.img4 {
+    width: 100px;
+    height: 100px;
+    margin-top: -4px;
+    margin-left: -4px;
+}
+.img5 {
+    width: 100px;
+    height: 100px;
+    margin-top: -5px;
+    margin-left: -4px;
+}
+
+.botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #D9D9D9;
+}
